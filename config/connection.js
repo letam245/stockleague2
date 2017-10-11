@@ -3,20 +3,21 @@ var mysql = require("mysql");
 
 var connection;
 
-if (process.env.JAWSDB_URL) {
-    connection = mysql.createConnection({
-        host: process.env.HOST,
-        user: process.env.USERNAME,
-        password: process.env.PASSWORD,
-        database: process.env.DATABASE_NAME
-    })
-}else{
-    connection = mysql.createConnection({
-        host:'localhost',
-        user:'root',
-        password:'password',
-        database:'stocks_db'
-    })
+if (process.env.JAWSDB_URL) 
+    connection = "production";  //mysql.createConnection({
+    //     host: process.env.HOST,
+    //     user: process.env.USERNAME,
+    //     password: process.env.PASSWORD,
+    //     database: process.env.DATABASE_NAME
+    
+else{
+    connection= "development"
+    // connection = mysql.createConnection({
+    //     host:'localhost',
+    //     user:'root',
+    //     password:'password',
+    //     database:'stocks_db'
+    //})
 }
 
 
