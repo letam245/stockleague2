@@ -9,15 +9,11 @@
   "test": {
     "username": "root",
     "password": null,
-    "database": "stocks_db",
+    "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-  "username": "gvwavstrtsqz2ls0",
-  "password": "z1r48okd5sg5j03d",
-  "database": "c2ptptwhjrlr9e3n",
-  "host": "p1us8ottbqwio8hv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-  "dialect": "mysql"
+    "use_env_variable": "JAWSDB_URL"
   }
 }
