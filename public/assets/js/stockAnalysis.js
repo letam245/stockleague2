@@ -36,14 +36,15 @@ function getFundamentals(symbol) {
     var fundamentals = JSON.parse(response);
     // console.log("Description: " + fundamentals.description);
     // Compnay Title
+      $('.bio').show();
       $('#companyName').empty();
       var companyTitle = $("<h4 class='companyTitle'>");
       var companyTitle = $("<h4>");
       companyTitle.addClass('companyTitle');
       var title = $("<h4>").text(symbol);
-      var line = $("<hr>").text(symbol)
+      
       companyTitle.append(title);
-      companyTitle.append(line);
+      
       $('#companyName').prepend(companyTitle);
       // #/Company Title
 
@@ -58,6 +59,7 @@ function getFundamentals(symbol) {
       // #/Company Information
 
       // stockDetails div
+      $(".bottomPart").show();
       $('#stockDetails').empty();
       var stockOpen = $("<p class='stockOpen'>");
       var stockOpen = $("<p>");
