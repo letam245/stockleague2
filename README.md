@@ -4,7 +4,7 @@ This project is a stock simulator application that allows users to compete for p
 
 ## Getting Started
 
-You can refer to the link here to see the application deployed on Heroku: https://stockleague2.herokuapp.com/
+You can refer to the link here to see the application deployed on Heroku: https://stockleague.herokuapp.com/
 
 If you want to download this repository and run locally, you will need a MySQL local database connection, and you can change the config.json file to the correct login. 
 
